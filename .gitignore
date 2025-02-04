@@ -1,0 +1,6 @@
+.idea/*
+.venv/*
+.env
+TestWeb/TestWeb/__pycache__/
+TestWeb/main/__pycache__/
+TestWeb/main/migrations/__pycache__/
