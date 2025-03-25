@@ -1,8 +1,81 @@
 {% extends 'main/base.html' %}
 
+{% load static %}
+
 {% block title %}Index Page{% endblock %}
 
 {% block content %}
-    <h1>Index Page</h1>
-    <p>Index Page</p>
+    <div class="block">
+        <div class="block-content">
+            <div>
+                <div class="logo-wrapper image-wrapper">
+                    <a href="/"><img class="logo" src="{%static 'main/img/logo.png'%}" alt="logo"></a>
+                </div>
+                <h1>Алексеева<br>Екатерина<br>Александровна</h1>
+                <br>
+                <p>Python программист</p>
+            </div>
+            <div class="image-block image-wrapper">
+                <img class="photo" src="{%static 'main/img/photo-no-table-no-bg.png'%}" alt="photo">
+            </div>
+        </div>
+    </div>
+    <div id="about" class="block">
+        <h1>Обо мне:</h1>
+        <div class="block-content about-item">
+            <h2>Резюме:</h2>
+            <div class="logo-wrapper image-wrapper">
+                <a href="{%static 'main/files/CV.pdf'%}">
+                    <img class="logo" src="{%static 'main/img/logos/CV.png'%}" alt="CV">
+                </a>
+            </div>
+        </div>
+        <div class="block-content about-item">
+            <h2>Мой код:</h2>
+            <div class="block-content">
+                <div class="logo-wrapper image-wrapper">
+                    <a href="https://github.com/Tritikale">
+                        <img class="logo" src="{%static 'main/img/logos/github.png'%}" alt="github">
+                    </a>
+                </div>
+                <div class="logo-wrapper image-wrapper">
+                    <a href="https://leetcode.com/u/Tritikale/">
+                        <img class="logo" src="{%static 'main/img/logos/leetcode.png'%}" alt="leetcode">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="skills" class="block">
+        <h1>Навыки:</h1>
+        <div class="block-content">
+            <ul>
+                <li>Python</li>
+                <li>Django Framework</li>
+                <li>SQL</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Git</li>
+                <li>Docker</li>
+            </ul>
+        </div>
+    </div>
+    <div id="experience" class="block">
+        <h1>Опыт:</h1>
+        <div class="block-content">
+            <div class="tree">
+                <div class="leaf">
+                    <span>Февраль 2023 — Июль 2023<br>(6 месяцев)</span>
+                    <h2>СПБ ФИЦ РАН</h2>
+                    <p>Младший научный сотрудник</p>
+                </div>
+                <div class="leaf">
+                    <span>Октябрь 2021 — Июнь 2022<br>(9 месяцев)</span>
+                    <h2>ДЖИЭМАЙ ГРУПП</h2>
+                    <p>Инженер-программист, Разработчик ПО</p>
+                </div>
+            </div>
+        </div>
+    </div>
 {%endblock%}

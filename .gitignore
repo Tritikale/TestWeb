@@ -4,3 +4,6 @@
 TestWeb/TestWeb/__pycache__/
 TestWeb/main/__pycache__/
 TestWeb/main/migrations/__pycache__/
+TestWeb/main/.idea/
+TestWeb/main/static/main/img/*
+TestWeb/main/static/main/files/*
